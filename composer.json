@@ -1,0 +1,36 @@
+{
+  "name": "kirillgladkih2024/selena-api",
+  "description": "Selena api methods",
+  "type": "libary",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Selena\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Selena\\Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Kirill Gladkih",
+      "email": "kirillgladkih2024@yandex.ru"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "psr/http-message": "^2.0",
+    "php": ">=8.3",
+    "guzzlehttp/guzzle": "^7.8"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.0",
+    "symfony/var-dumper": "^7.0"
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  }
+}
